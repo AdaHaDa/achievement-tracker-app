@@ -1,0 +1,15 @@
+// firebaseConfig.ts
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDINSTTxKTkmj4ZV690vn0OW_icba-SFHA",
+  authDomain: "achievement-tracker-3ac8c.firebaseapp.com",
+  projectId: "achievement-tracker-3ac8c",
+  storageBucket: "achievement-tracker-3ac8c.firebasestorage.app",
+  messagingSenderId: "204220631299",
+  appId: "1:204220631299:web:62ee80d99ceda2888bc136"
+};
+
+const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app);
